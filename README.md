@@ -1,5 +1,5 @@
 <p align="center" width="100%">
-    <img height="100" src="https://github.com/said7388/developer-portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
+    <img height="100" src="https://github.com/said7388/portfolio/assets/77630868/c0064908-cd5f-4751-a77c-eba90a62b55c">
 </p>
 
 <h1 align="center">Developer Portfolio</h1>
@@ -162,8 +162,8 @@ pnpm --version  # or npm --version
 ### 1. Fork and Clone the Repository
 
 ```bash
-git clone https://github.com/<YOUR_GITHUB_USERNAME>/developer-portfolio.git
-cd developer-portfolio
+git clone https://github.com/<YOUR_GITHUB_USERNAME>/portfolio.git
+cd portfolio
 ```
 
 ### 2. Install Dependencies
@@ -221,10 +221,10 @@ docker-compose down
 
 ```bash
 # Build the development image
-docker build -t developer-portfolio:dev -f Dockerfile.dev .
+docker build -t portfolio:dev -f Dockerfile.dev .
 
 # Run the container
-docker run -p 3000:3000 --name portfolio-dev developer-portfolio:dev
+docker run -p 3000:3000 --name portfolio-dev portfolio:dev
 
 # Stop and remove container
 docker stop portfolio-dev && docker rm portfolio-dev
@@ -234,10 +234,10 @@ docker stop portfolio-dev && docker rm portfolio-dev
 
 ```bash
 # Build the production image
-docker build -t developer-portfolio:prod -f Dockerfile.prod .
+docker build -t portfolio:prod -f Dockerfile.prod .
 
 # Run the production container
-docker run -p 3000:3000 --name portfolio-prod developer-portfolio:prod
+docker run -p 3000:3000 --name portfolio-prod portfolio:prod
 ```
 
 ---
@@ -329,7 +329,7 @@ profile: "/your-image-name.png"; // or .jpg, .webp
 
 ### 🚀 Deploy to Vercel (Recommended)
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/said7388/developer-portfolio)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/said7388/portfolio)
 
 **Manual Deployment:**
 
@@ -350,7 +350,7 @@ profile: "/your-image-name.png"; // or .jpg, .webp
 
 ### 🌐 Deploy to Netlify
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/said7388/developer-portfolio)
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/said7388/portfolio)
 
 **Manual Deployment:**
 
@@ -366,10 +366,10 @@ profile: "/your-image-name.png"; // or .jpg, .webp
 
 ```bash
 # Build production image
-docker build -t developer-portfolio:prod -f Dockerfile.prod .
+docker build -t portfolio:prod -f Dockerfile.prod .
 
 # Run
-docker run -d -p 80:3000 --name portfolio developer-portfolio:prod
+docker run -d -p 80:3000 --name portfolio portfolio:prod
 
 # Or use Docker Compose
 docker-compose -f docker-compose.prod.yml up -d
@@ -581,13 +581,13 @@ This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) 
 
 ## Support :coffee:
 
-- ⭐ [Star the repository](https://github.com/said7388/developer-portfolio/stargazers)
-- � [Report bugs](https://github.com/said7388/developer-portfolio/issues)
-- � [Suggest features](https://github.com/said7388/developer-portfolio/discussions)
+- ⭐ [Star the repository](https://github.com/said7388/portfolio/stargazers)
+- � [Report bugs](https://github.com/said7388/portfolio/issues)
+- � [Suggest features](https://github.com/said7388/portfolio/discussions)
 
 ---
 
-![GitHub stars](https://img.shields.io/github/stars/said7388/developer-portfolio?style=social)
-![GitHub forks](https://img.shields.io/github/forks/said7388/developer-portfolio?style=social)
-![GitHub issues](https://img.shields.io/github/issues/said7388/developer-portfolio)
-![GitHub license](https://img.shields.io/github/license/said7388/developer-portfolio)
+![GitHub stars](https://img.shields.io/github/stars/said7388/portfolio?style=social)
+![GitHub forks](https://img.shields.io/github/forks/said7388/portfolio?style=social)
+![GitHub issues](https://img.shields.io/github/issues/said7388/portfolio)
+![GitHub license](https://img.shields.io/github/license/said7388/portfolio)
