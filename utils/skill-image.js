@@ -82,7 +82,8 @@ import kubernetes from '../app/assets/svg/skills/kubernetes.svg'
 import linux from '../app/assets/svg/skills/linux.svg'
 import sqlalchemy from '../app/assets/svg/skills/sqlalchemy.svg'
 import fastapi from '../app/assets/svg/skills/fastapi.svg'
-
+import nodejs from '../app/assets/svg/skills/nodejs.svg'
+import flask from '../app/assets/svg/skills/flask.svg'
 
 
 export const skillsImage = (skill) => {
@@ -160,7 +161,7 @@ export const skillsImage = (skill) => {
       return julia;
     case 'matlab':
       return matlab;
-    case 'php':
+    case 'php (laravel)':
       return php;
     case 'prisma':
       return prisma;
@@ -254,6 +255,10 @@ export const skillsImage = (skill) => {
       return sqlalchemy;
     case 'fastapi':
       return fastapi;
+    case 'node js':
+      return nodejs;
+    case 'flask':
+      return flask;
     default:
       break;
   }

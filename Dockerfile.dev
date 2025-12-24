@@ -1,24 +1,20 @@
-FROM node:20 AS base
-WORKDIR /app
-RUN npm i -g pnpm
-RUN npm i -g next
-COPY package*.json .
+FROM node:20-alpine
 
+WORKDIR /app
+
+# Install pnpm
+RUN npm install -g pnpm
+
+# Copy dependency files
+COPY package.json pnpm-lock.yaml* ./
+
+# Install dependencies
 RUN pnpm install
 
+# Copy source code
 COPY . .
-
-FROM node:20-alpine3.19 as release
-WORKDIR /app
-RUN npm i -g pnpm
-
-#RUN npm i -g tailwindcss postcss autoprefixer
-
-COPY --from=base /app/node_modules ./node_modules
-COPY --from=base /app/package.json ./package.json
-COPY --from=base /app/app ./app
-COPY --from=base /app .
 
 EXPOSE 3000
 
-CMD ["pnpm", "dev"]
+# IMPORTANT: enable polling for hot reload
+CMD ["sh", "-c", "CHOKIDAR_USEPOLLING=true pnpm dev"]

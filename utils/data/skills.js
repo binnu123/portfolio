@@ -4,18 +4,17 @@ export const skillsData = [
   "CSS",
   "JavaScript",
   "TypeScript",
-  "React.js",
-  "Next.js",
+  "React",
+  "Next js",
   "Bootstrap",
-  "Tailwind CSS",
-  "Material UI",
+  "Tailwind",
 
   // Backend
-  "Node.js",
+  "Node js",
   "PHP (Laravel)",
   "Python",
   "Flask",
-  "REST APIs",
+
 
   // Databases
   "MySQL",
@@ -27,9 +26,4 @@ export const skillsData = [
   "Docker",
   "Nginx",
   "AWS",
-
-  // Other
-  "Web Scraping (Scrapy)",
-  "OpenAI API",
-  "Agile / Scrum"
 ];
